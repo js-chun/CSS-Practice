@@ -4,6 +4,13 @@ body {
   font-family: 'Montserrat', sans-serif;
   width: 100vw;
   display: flex;
+  justify-content: center;
+}
+
+.cards {
+  width: 80%;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -12,8 +19,8 @@ body * {
 }
 
 .container {
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,4 +314,138 @@ button {
 #card-5:hover .card-info {
   top: 50%;
   transition: 500ms ease;
+}
+
+
+
+#card-6 {
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+  position: relative;
+  padding: 0;
+  background-color: white;
+}
+
+#card-6 img {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  z-index: 5;
+  transform-origin: top;
+  object-fit: cover;
+}
+
+#card-6 .card-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#card-6::before {
+  content: '';
+  z-index: -5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  transform-origin: center;
+  background-color:rgb(245, 245, 245);
+}
+
+#card-6::after {
+  content: '';
+  z-index: -10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  transform-origin: center;
+  background-color:rgb(235, 235, 235);
+}
+
+#card-6:hover img {
+  height: 75%;
+  transition: 500ms ease;
+}
+
+#card-6:hover::before {
+  transform: rotate(15deg);
+  transition: 500ms ease;
+}
+
+#card-6:hover::after {
+  transform: rotate(30deg);
+  transition: 500ms ease;
+}
+
+
+
+#card-7 {
+  position: relative;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+  padding: 0;
+}
+
+#card-7 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#card-7 .card-info {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80%;
+}
+
+#card-7 h1 {
+  text-transform: uppercase;
+  margin: 20px 0 5px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#card-7 p {
+  opacity: 0;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#card-7 a {
+  opacity: 0;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+
+}
+
+#card-7:hover .card-info {
+  top: 0;
+  transition: 500ms ease;
+  width: 100%;
+}
+
+#card-7:hover p,
+#card-7:hover a {
+  opacity: 1;
+  transition: 300ms ease;
+  transition-delay: 600ms;
 }
