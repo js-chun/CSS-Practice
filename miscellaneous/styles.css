@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body{ 
   display: flex;
@@ -245,4 +246,323 @@ body{
 #misc-4 .box:hover .rotated::after {
   transform: scaleY(1);
   transition-delay: 1.5s;
+}
+
+
+
+#misc-5 {
+  font-family: 'Oswald', sans-serif;
+}
+
+#misc-5 h1 {
+  font-size: 3rem;
+  animation: rotateSide 2s infinite linear alternate;
+  text-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+@keyframes rotateSide {
+  0% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+
+
+#misc-6 {
+  background-color: #4ecdc4; 
+}
+
+#misc-6 section {
+  width: 6rem;
+  height: 6rem;
+  background-color: #ffe66d;
+  border-radius: 20px;
+  animation: flipLoad 2s infinite linear;
+  transform-origin: center;
+}
+
+@keyframes flipLoad {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(0deg) rotateY(180deg);
+  }
+  100% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+}
+
+
+#misc-7 {
+  overflow: hidden;
+  position: relative;
+}
+
+#misc-7 .scrolling {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: scroll 2s linear infinite;
+}
+
+#misc-7 .scrolling img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#misc-7 .scrolling img:first-of-type {
+  left: 0;
+}
+
+#misc-7 .scrolling img:last-of-type {
+  left: 100%;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+#misc-7 .fixed {
+  position: absolute;
+  top: 60%;
+  animation: flying 2s linear infinite;
+}
+
+@keyframes flying {
+  0% {
+    transform: translate(0,0) rotate(0);
+  }
+  20% {
+    transform: translate(-50%,10%) rotate(-10deg);
+  }
+  25% {
+    transform: translate(-50%,10%) rotate(20deg);
+  }
+  80% {
+    transform: translate(80%, -20%) rotate(30deg);
+  }
+  90% {
+    transform: translate(50%, 5%) rotate(15deg);
+  }
+}
+
+#misc-7 a {
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
+  font-size: 0.8rem;
+  text-transform: lowercase;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+
+#misc-8 {
+  font-family: 'Quicksand', sans-serif;
+  text-transform: lowercase;
+}
+
+#misc-8 h1::after {
+  content: 'transitions';
+  animation: wordSwitch 4s infinite linear;
+}
+
+@keyframes wordSwitch {
+  0% { content: 'transitions'; }
+  33% { content: 'animations'; }
+  67% { content: 'transforms'; }
+}
+
+#misc-8 span {
+  color: #ff4d6d;
+}
+
+
+
+#misc-9 {
+  font-family: 'Oswald', sans-serif;
+}
+
+#misc-9 .bg {
+  width: 100%;
+  height: 100%;
+  background: url('patternbg.PNG');
+  background-position: 0 0;
+  animation: animatedBg 20s linear infinite;
+}
+
+@keyframes animatedBg {
+  0% { background-position: 0 0; }
+  100% { background-position: 1158px 370px}
+}
+
+#misc-9 h1 {
+  color: #fe6d73;
+  background-color: white;
+  margin: 0;
+  text-align: center;
+}
+
+
+
+#misc-10 {
+  background-color: #424041;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  text-transform: uppercase;
+}
+
+#misc-10 small{
+  position: absolute;
+  top: 0;
+  color: #fedc97;
+}
+
+#misc-10 ul {
+  font-size: 6rem;
+  color: #5a5759;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+#misc-10 li {
+  text-shadow: none;
+}
+
+#misc-10 ul li {
+  animation: lightUpLetter 5000ms infinite;
+}
+
+@keyframes lightUpLetter {
+  0% {
+    color: #5a5759;
+  }
+  10% {
+    color: #ffbc42;
+    text-shadow: 0px 0px 10px #ffbc42;
+  }
+  15% {
+    color: #ffbc42;
+    text-shadow: 0px 0px 15px #ffbc42;
+  }
+  18% {
+    color: #5a5759;
+    text-shadow:none;
+  }
+}
+
+#misc-10 ul li:nth-of-type(1) { animation-delay: 500ms; }
+#misc-10 ul li:nth-of-type(2) { animation-delay: 1000ms; }
+#misc-10 ul li:nth-of-type(3) { animation-delay: 1500ms; }
+#misc-10 ul li:nth-of-type(4) { animation-delay: 2000ms; }
+#misc-10 ul li:nth-of-type(5) { animation-delay: 2500ms; }
+#misc-10 ul li:nth-of-type(6) { animation-delay: 3000ms; }
+#misc-10 ul li:nth-of-type(7) { animation-delay: 3500ms; }
+#misc-10 ul li:nth-of-type(8) { animation-delay: 4000ms; }
+
+
+
+#misc-11 {
+  background-color: #133c55;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  text-transform: uppercase;
+}
+
+#misc-11 small{
+  position: absolute;
+  top: 0;
+  color: #fedc97;
+}
+
+#misc-11 h1 {
+  font-size: 6rem;
+  color: #35637f;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  text-shadow: none;  
+  animation: lightUp 5s infinite;
+}
+
+#misc-11 h1:hover {
+  animation: lightUp 2s 1 forwards;
+}
+
+@keyframes lightUp {
+  49% {
+    color: #35637f;
+  }
+  50% {
+    color: #fedc97;
+  }
+  52% {
+    color: #35637f;
+  }
+  53% {
+    color: #fedc97;
+    text-shadow: none;
+  }
+  70% {
+    text-shadow: 0px 0px 10px #fedc97;
+  }
+  95% {
+    color: #fedc97;
+    text-shadow: 0px 0px 10px #fedc97;
+  }
+  99% {
+    color: #35637f;
+    text-shadow: none;
+  }
+}
+
+
+
+#misc-12 {
+  position: relative;
+}
+
+#misc-12 section {
+  background-color: #666a86;
+  width: 50%;
+  height: 50%;
+  border-radius: 50px; 
+  position: relative;
+}
+
+#misc-12 i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 7rem;
+  color: #edafb8;
+  transform: translate(-50%, -50%);
+  animation: heartBeat 1s infinite;
+}
+
+@keyframes heartBeat {
+  45% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  55% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  65% {
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+  75% {
+    transform: translate(-50%, -50%) scale(1.15);
+  }
 }
