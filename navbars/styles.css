@@ -634,3 +634,63 @@ ul.nav-links li a {
   50% { opacity: 50%; color: black;}
   100% { opacity: 1; color: white;}
 }
+
+
+
+#nav-12 .nav-link {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#nav-12 .nav-link::before {
+  content:attr(data-text);
+  color: #f72585;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 0 50%, 100% 50%, 100% 0);
+  transition: 500ms ease;
+  transition-delay: 300ms;
+}
+
+#nav-12 .nav-link::after {
+  content:attr(data-text);
+  color: #f72585;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 50%, 0 100%, 100% 100%, 100% 50%);
+  transition: 500ms ease;
+  transition-delay: 300ms;
+}
+
+#nav-12 li {
+  position: relative;
+}
+
+#nav-12 li::before {
+  content: '';
+  width: 0%;
+  position: absolute;
+  height: 2px;
+  background-color: #4cc9f0;
+  z-index: 10;
+  left:0;
+  transform-origin: left;
+  transition: 300ms ease;
+}
+
+#nav-12 li:hover::before {
+  width: 100%;
+}
+
+#nav-12 li:hover .nav-link::before {
+  transform: translate(15%,-15%);
+}
+
+#nav-12 li:hover .nav-link::after {
+  transform: translate(-15%,15%);
+}
+

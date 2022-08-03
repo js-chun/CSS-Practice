@@ -1,174 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Overlays/Effects</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <small>Overlay: Collapses From Each Side</small>
-    <small>Captions: Fades In</small>
-    <div class="img-container" id="img-12" >
-      <section class="picture"></section>
-      <section class="overlay">
-        <section class="caption">
-          <h1>Caption</h1>
-          <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quasi?</small>
-          <button>i</button>
-        </section>
-      </section>
-    </div>
-  </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Image Overlays/Effects</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<small>Overlay: Expands From Bottom Left</small>
+			<div class="img-container" id="img-16">
+				<section class="picture"></section>
+				<section class="overlay">
+					<section class="caption">
+						<h1>Caption</h1>
+						<small
+							>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+							quasi?</small
+						>
+						<br />
+						<button>READ MORE</button>
+					</section>
+				</section>
+			</div>
+		</div>
 
-  <div class="container">
-    <small>Image: Collapses Diagonally</small>
-    <small>Captions: Fall In</small>
-    <div class="img-container" id="img-11" >
-      <section class="picture"></section>
-      <section class="overlay">
-        <section class="caption">
-          <h1>Caption</h1>
-          <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quasi?</small>
-          <button>READ MORE</button>
-        </section>
-      </section>
-    </div>
-  </div>
+		<div class="container">
+			<small>Image: Shrink Into Circle</small>
+			<small>Caption: Fades In</small>
+			<div class="img-container" id="img-15">
+				<section class="picture"></section>
+				<section class="overlay">
+					<section class="caption">
+						<h1>Caption</h1>
+						<small
+							>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+							quasi?</small
+						>
+						<button>READ MORE</button>
+					</section>
+				</section>
+			</div>
+		</div>
 
-  <div class="container">
-    <small>Overlay: Scales Down, Fades In</small>
-    <div class="img-container" id="img-10" >
-      <section class="picture"></section>
-      <section class="overlay">
-        <section class="caption">
-          <h1>Caption</h1>
-          <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quasi?</small>
-          <button>READ MORE</button>
-        </section>
-      </section>
-    </div>
-  </div>
+		<div class="container">
+			<small>Overlay: Top Right, Expands on Hover</small>
+			<div class="img-container" id="img-14">
+				<section class="picture"></section>
+				<section class="overlay">
+					<section class="caption">
+						<h1>Caption</h1>
+						<small
+							>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+							quasi?</small
+						>
+						<br />
+						<button>READ MORE</button>
+					</section>
+				</section>
+			</div>
+		</div>
 
-  <div class="container">
-    <small>Image: Scales Down</small>
-    <small>Overlay: Scales Up, Rotates In</small>
-    <div class="img-container" id="img-9" >
-      <section class="picture"></section>
-      <section class="overlay">
-        <section class="caption">
-          <h1>Caption</h1>
-          <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quasi?</small>
-          <button>READ MORE</button>
-        </section>
-      </section>
-    </div>
-  </div>
+		<div class="container">
+			<small>Three Images: Expands on Hover</small>
+			<div class="img-container" id="img-13">
+				<section class="picture"></section>
+				<section class="picture"></section>
+				<section class="picture"></section>
+			</div>
+		</div>
 
+		<div class="container">
+			<small>Overlay: Collapses From Each Side</small>
+			<small>Captions: Fades In</small>
+			<div class="img-container" id="img-12">
+				<section class="picture"></section>
+				<section class="overlay">
+					<section class="caption">
+						<h1>Caption</h1>
+						<small
+							>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+							quasi?</small
+						>
+						<i class="fa-solid fa-circle-info"></i>
+					</section>
+				</section>
+			</div>
+		</div>
 
-  <div class="container">
-    <small>Overlay: Rotate In</small>
-    <small>Caption: Rotate In From Opposite Direction</small>
-    <div class="img-container" id="img-8" >
-      <section class="picture"></section>
-      <section class="overlay">
-        <section class="caption">
-          <h1>Caption</h1>
-          <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quasi?</small>
-          <button>READ MORE</button>
-        </section>
-      </section>
-    </div>
-  </div>
+		<div class="container">
+			<small>Image: Collapses Diagonally</small>
+			<small>Captions: Fall In</small>
+			<div class="img-container" id="img-11">
+				<section class="picture"></section>
+				<section class="overlay">
+					<section class="caption">
+						<h1>Caption</h1>
+						<small
+							>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+							quasi?</small
+						>
+						<button>READ MORE</button>
+					</section>
+				</section>
+			</div>
+		</div>
 
+		<div class="container">
+			<small>Overlay: Scales Down, Fades In</small>
+			<div class="img-container" id="img-10">
+				<section class="picture"></section>
+				<section class="overlay">
+					<section class="caption">
+						<h1>Caption</h1>
+						<small
+							>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+							quasi?</small
+						>
+						<button>READ MORE</button>
+					</section>
+				</section>
+			</div>
+		</div>
 
-  <div class="container">
-    <small>Overlay: Slide In Diagonally</small>
-    <small>Caption: Delayed Slide In</small>
-    <div class="img-container" id="img-7" >
-      <section class="picture"></section>
-      <section class="overlay">
-        <section class="caption">
-          <h1>Caption</h1>
-          <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quasi?</small>
-          <button>READ MORE</button>
-        </section>
-      </section>
-    </div>
-  </div>
+		<div class="container">
+			<small>Image: Scales Down</small>
+			<small>Overlay: Scales Up, Rotates In</small>
+			<div class="img-container" id="img-9">
+				<section class="picture"></section>
+				<section class="overlay">
+					<section class="caption">
+						<h1>Caption</h1>
+						<small
+							>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+							quasi?</small
+						>
+						<button>READ MORE</button>
+					</section>
+				</section>
+			</div>
+		</div>
 
+		<div class="container">
+			<small>Overlay: Rotate In</small>
+			<small>Caption: Rotate In From Opposite Direction</small>
+			<div class="img-container" id="img-8">
+				<section class="picture"></section>
+				<section class="overlay">
+					<section class="caption">
+						<h1>Caption</h1>
+						<small
+							>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+							quasi?</small
+						>
+						<button>READ MORE</button>
+					</section>
+				</section>
+			</div>
+		</div>
 
-  <div class="container">
-    <small>Image: Zoom Out</small>
-    <div class="img-container" id="img-6" >
-      <section class="picture"></section>
-    </div>
-  </div>
+		<div class="container">
+			<small>Overlay: Slide In Diagonally</small>
+			<small>Caption: Delayed Slide In</small>
+			<div class="img-container" id="img-7">
+				<section class="picture"></section>
+				<section class="overlay">
+					<section class="caption">
+						<h1>Caption</h1>
+						<small
+							>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+							quasi?</small
+						>
+						<button>READ MORE</button>
+					</section>
+				</section>
+			</div>
+		</div>
 
-  <div class="container">
-    <small>Overlay: Slide In</small>
-    <small>Caption: Delayed Slide/Fade In</small>
-    <div class="img-container" id="img-5" >
-      <section class="picture"></section>
-      <section class="overlay">
-        <section class="caption">
-          <h1>Caption</h1>
-          <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quasi?</small>
-        </section>
-      </section>
-    </div>
-  </div>
+		<div class="container">
+			<small>Image: Zoom Out</small>
+			<div class="img-container" id="img-6">
+				<section class="picture"></section>
+			</div>
+		</div>
 
+		<div class="container">
+			<small>Overlay: Slide In</small>
+			<small>Caption: Delayed Slide/Fade In</small>
+			<div class="img-container" id="img-5">
+				<section class="picture"></section>
+				<section class="overlay">
+					<section class="caption">
+						<h1>Caption</h1>
+						<small
+							>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+							quasi?</small
+						>
+					</section>
+				</section>
+			</div>
+		</div>
 
-  <div class="container">
-    <small>Image: Slight Slide Out</small>
-    <small>Overlay: Opaque, Slight Slide In</small>
-    <div class="img-container" id="img-4" >
-      <section class="picture"></section>
-      <section class="overlay">
-        <h1>Caption</h1>
-        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quasi?</small>
-      </section>
-    </div>
-  </div>
+		<div class="container">
+			<small>Image: Slight Slide Out</small>
+			<small>Overlay: Opaque, Slight Slide In</small>
+			<div class="img-container" id="img-4">
+				<section class="picture"></section>
+				<section class="overlay">
+					<h1>Caption</h1>
+					<small
+						>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+						quasi?</small
+					>
+				</section>
+			</div>
+		</div>
 
-  <div class="container">
-    <small>Image: Slide Out</small>
-    <small>Overlay: Opaque, Slide In</small>
-    <div class="img-container" id="img-3" >
-      <section class="picture"></section>
-      <section class="overlay">
-        <h1>Caption</h1>
-        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quasi?</small>
-      </section>
-    </div>
-  </div>
+		<div class="container">
+			<small>Image: Slide Out</small>
+			<small>Overlay: Opaque, Slide In</small>
+			<div class="img-container" id="img-3">
+				<section class="picture"></section>
+				<section class="overlay">
+					<h1>Caption</h1>
+					<small
+						>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+						quasi?</small
+					>
+				</section>
+			</div>
+		</div>
 
-  <div class="container">
-    <small>Image: Slight Rotate, Zoom</small>
-    <small>Overlay: Transparent, Slide In</small>
-    <div class="img-container" id="img-2" >
-      <section class="picture"></section>
-      <section class="overlay">
-        <h1>Caption</h1>
-        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quasi?</small>
-      </section>
-    </div>
-  </div>
-  
-  <div class="container">
-    <small>Image: Slight Rotate, Zoom</small>
-    <small>Overlay: Transparent, Fade In</small>
-    <div class="img-container" id="img-1" >
-      <section class="picture"></section>
-      <section class="overlay">
-        <h1>Caption</h1>
-        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quasi?</small>
-      </section>
-    </div>
-  </div>
+		<div class="container">
+			<small>Image: Slight Rotate, Zoom</small>
+			<small>Overlay: Transparent, Slide In</small>
+			<div class="img-container" id="img-2">
+				<section class="picture"></section>
+				<section class="overlay">
+					<h1>Caption</h1>
+					<small
+						>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+						quasi?</small
+					>
+				</section>
+			</div>
+		</div>
 
-</body>
+		<div class="container">
+			<small>Image: Slight Rotate, Zoom</small>
+			<small>Overlay: Transparent, Fade In</small>
+			<div class="img-container" id="img-1">
+				<section class="picture"></section>
+				<section class="overlay">
+					<h1>Caption</h1>
+					<small
+						>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id,
+						quasi?</small
+					>
+				</section>
+			</div>
+		</div>
+	</body>
 </html>
