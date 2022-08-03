@@ -589,3 +589,48 @@ ul.nav-links li a {
   opacity: 1;
   transform: translate(6px,-6px);
 }
+
+
+
+#nav-11 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#nav-11 .nav-link {
+  position: relative;
+  padding: 5px 10px;
+}
+
+#nav-11 .nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left center;
+  height: 100%;
+  width: 100%;
+  background-color: #e63946;
+  z-index: -10;
+  transform: scale(0,10%);
+}
+
+#nav-11 .nav-link:hover {
+  animation: navText 1s 1 linear forwards;
+}
+
+#nav-11 .nav-link:hover::before {
+  animation: navBg 1s 1 linear forwards;
+}
+
+@keyframes navBg {
+  0% { transform: scale(0,10%); }
+  50% { transform: scale(100%,10%); }
+  100% { transform: scale(100%,100%); }
+}
+
+@keyframes navText {
+  0% { opacity: 1; color: black;}
+  50% { opacity: 50%; color: black;}
+  100% { opacity: 1; color: white;}
+}
